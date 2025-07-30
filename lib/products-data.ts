@@ -16,22 +16,20 @@ export interface Product {
   features: string[]
   specifications: Record<string, string>
   inStock: boolean
-  color?: string
 }
 
 export const productsDatabase: Record<string, Product> = {
-  "iphone-16-pro": {
-    id: "iphone-16-pro",
-    name: "iPhone 16 Pro",
+  "iphone-15-pro": {
+    id: "iphone-15-pro",
+    name: "iPhone 15 Pro",
     tagline: "Titanium. So strong. So light. So Pro.",
     price: 1229,
     originalPrice: 1299,
     images: [
-      "/img/hero_startframe__apple_16_pro.jpg?height=600&width=600&text=iPhone+16+Pro+Front",
-      "/img/apple_intelligence.jpg?height=600&width=600&text=iPhone+16+Pro+Back",
-      "/img/apple_16_pro.jpg?height=600&width=600&text=iPhone+16+Pro+Side",
-      "/img/apple_16_pro_taouch.jpg.jpg?height=600&width=600&text=iPhone+16+Pro+Colors",
-
+      "/placeholder.svg?height=600&width=600&text=iPhone+15+Pro+Front",
+      "/placeholder.svg?height=600&width=600&text=iPhone+15+Pro+Back",
+      "/placeholder.svg?height=600&width=600&text=iPhone+15+Pro+Side",
+      "/placeholder.svg?height=600&width=600&text=iPhone+15+Pro+Colors",
     ],
     category: "Smartphones",
     rating: 4.8,
@@ -40,7 +38,7 @@ export const productsDatabase: Record<string, Product> = {
     colors: ["Titane naturel", "Titane bleu", "Titane blanc", "Titane noir"],
     storage: ["128 Go", "256 Go", "512 Go", "1 To"],
     description:
-      "L'iPhone 16 Pro redéfinit ce qu'un smartphone peut être. Avec son châssis en titane de qualité aérospatiale, la puce A17 Pro révolutionnaire et le système de caméra Pro le plus avancé jamais conçu.",
+      "L'iPhone 15 Pro redéfinit ce qu'un smartphone peut être. Avec son châssis en titane de qualité aérospatiale, la puce A17 Pro révolutionnaire et le système de caméra Pro le plus avancé jamais conçu.",
     features: [
       "Châssis en titane de qualité aérospatiale",
       "Puce A17 Pro avec GPU 6 cœurs",
@@ -59,7 +57,6 @@ export const productsDatabase: Record<string, Product> = {
       Résistance: "IP68",
     },
     inStock: true,
-    color: "bg-black",
   },
   "macbook-pro-m3": {
     id: "macbook-pro-m3",
@@ -68,8 +65,8 @@ export const productsDatabase: Record<string, Product> = {
     price: 2199,
     originalPrice: 2399,
     images: [
-      "/img/promo_macbook_air.jpg?height=600&width=600&text=MacBook+Pro+M3+Open",
-      "img/macbook_pro_16.jpg?height=600&width=600&text=MacBook+Pro+M3+Closed",
+      "/placeholder.svg?height=600&width=600&text=MacBook+Pro+M3+Open",
+      "/placeholder.svg?height=600&width=600&text=MacBook+Pro+M3+Closed",
       "/placeholder.svg?height=600&width=600&text=MacBook+Pro+M3+Side",
       "/placeholder.svg?height=600&width=600&text=MacBook+Pro+M3+Ports",
     ],
@@ -184,10 +181,10 @@ export const productsDatabase: Record<string, Product> = {
     price: 699,
     originalPrice: 799,
     images: [
-      "/img/slide_3B_medium.jpg?height=600&width=600&text=iPad+Air+M2+Front",
-      "/img/all_ipad_aire.jpg?height=600&width=600&text=iPad+Air+M2+Back",
-      "/img/ipad.png?height=600&width=600&text=iPad+Air+M2+Pencil",
-      "/img/pencil__medium.jpg?height=600&width=600&text=iPad+Air+M2+Colors",
+      "/placeholder.svg?height=600&width=600&text=iPad+Air+M2+Front",
+      "/placeholder.svg?height=600&width=600&text=iPad+Air+M2+Back",
+      "/placeholder.svg?height=600&width=600&text=iPad+Air+M2+Pencil",
+      "/placeholder.svg?height=600&width=600&text=iPad+Air+M2+Colors",
     ],
     category: "Tablettes",
     rating: 4.6,
