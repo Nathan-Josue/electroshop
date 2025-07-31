@@ -2,12 +2,12 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Search, ShoppingCart, User, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { useCart } from "@/components/cart/cart-context"
 import SearchBar from "@/components/search/search-bar"
-import Image from "next/image";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -62,9 +62,11 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo with animation */}
           <Link href="/" className="flex items-center space-x-2 group">
-            <div className="w-10 h-10 relative rounded-lg flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
-              <Image src="/logo/shop.svg" alt="Logo ElectroShop" fill />
-            </div>
+            <img
+                src="/logo/shop.svg"
+                alt="Logo Shop"
+                className="h-12 w-auto"
+            />
             <span className="text-xl font-semibold text-black transition-colors duration-300 group-hover:text-blue-600">
               ElectroShop
             </span>

@@ -16,20 +16,21 @@ export interface Product {
   features: string[]
   specifications: Record<string, string>
   inStock: boolean
+  color?: string
 }
 
 export const productsDatabase: Record<string, Product> = {
-  "iphone-15-pro": {
-    id: "iphone-15-pro",
-    name: "iPhone 15 Pro",
+  "iphone-16-pro": {
+    id: "iphone-16-pro",
+    name: "iPhone 16 Pro",
     tagline: "Titanium. So strong. So light. So Pro.",
     price: 1229,
     originalPrice: 1299,
     images: [
-      "/placeholder.svg?height=600&width=600&text=iPhone+15+Pro+Front",
-      "/placeholder.svg?height=600&width=600&text=iPhone+15+Pro+Back",
-      "/placeholder.svg?height=600&width=600&text=iPhone+15+Pro+Side",
-      "/placeholder.svg?height=600&width=600&text=iPhone+15+Pro+Colors",
+      "/img/apple_intelligence.jpg?height=600&width=600&text=iPhone+16+Pro+Back",
+      "/img/apple_16_pro.jpg?height=600&width=600&text=iPhone+16+Pro+Front",
+      "/img/apple_16_pro_taouch.jpg.jpg?height=600&width=600&text=iPhone+16+Pro+Side",
+      "/img/hero_startframe__apple_16_pro.jpg?height=600&width=600&text=iPhone+16+Pro+Colors",
     ],
     category: "Smartphones",
     rating: 4.8,
@@ -38,7 +39,7 @@ export const productsDatabase: Record<string, Product> = {
     colors: ["Titane naturel", "Titane bleu", "Titane blanc", "Titane noir"],
     storage: ["128 Go", "256 Go", "512 Go", "1 To"],
     description:
-      "L'iPhone 15 Pro redéfinit ce qu'un smartphone peut être. Avec son châssis en titane de qualité aérospatiale, la puce A17 Pro révolutionnaire et le système de caméra Pro le plus avancé jamais conçu.",
+        "L'iPhone 16 Pro redéfinit ce qu'un smartphone peut être. Avec son châssis en titane de qualité aérospatiale, la puce A17 Pro révolutionnaire et le système de caméra Pro le plus avancé jamais conçu.",
     features: [
       "Châssis en titane de qualité aérospatiale",
       "Puce A17 Pro avec GPU 6 cœurs",
@@ -57,6 +58,8 @@ export const productsDatabase: Record<string, Product> = {
       Résistance: "IP68",
     },
     inStock: true,
+    color: "bg-black",
+
   },
   "macbook-pro-m3": {
     id: "macbook-pro-m3",
@@ -65,7 +68,7 @@ export const productsDatabase: Record<string, Product> = {
     price: 2199,
     originalPrice: 2399,
     images: [
-      "/placeholder.svg?height=600&width=600&text=MacBook+Pro+M3+Open",
+      "/img/promo_macbook_air.jpg?height=600&width=600&text=MacBook+Pro+M3+Open",
       "/placeholder.svg?height=600&width=600&text=MacBook+Pro+M3+Closed",
       "/placeholder.svg?height=600&width=600&text=MacBook+Pro+M3+Side",
       "/placeholder.svg?height=600&width=600&text=MacBook+Pro+M3+Ports",
@@ -77,7 +80,7 @@ export const productsDatabase: Record<string, Product> = {
     colors: ["Gris sidéral", "Argent"],
     storage: ["512 Go", "1 To", "2 To", "4 To"],
     description:
-      "Le MacBook Pro 14 pouces avec puce M3 Pro offre des performances révolutionnaires pour les professionnels les plus exigeants.",
+        "Le MacBook Pro 14 pouces avec puce M3 Pro offre des performances révolutionnaires pour les professionnels les plus exigeants.",
     features: [
       "Puce M3 Pro avec CPU 11 cœurs et GPU 14 cœurs",
       "Écran Liquid Retina XDR 14,2 pouces",
@@ -97,17 +100,17 @@ export const productsDatabase: Record<string, Product> = {
     },
     inStock: true,
   },
-  "samsung-galaxy-s24": {
-    id: "samsung-galaxy-s24",
-    name: "Samsung Galaxy S24 Ultra",
+  "samsung-galaxy-s25-ultra": {
+    id: "samsung-galaxy-s25",
+    name: "Samsung Galaxy S25 Ultra",
     tagline: "Galaxy AI is here. Epic just got easier.",
     price: 1299,
     originalPrice: 1399,
     images: [
-      "/placeholder.svg?height=600&width=600&text=Galaxy+S24+Ultra+Front",
-      "/placeholder.svg?height=600&width=600&text=Galaxy+S24+Ultra+Back",
-      "/placeholder.svg?height=600&width=600&text=Galaxy+S24+Ultra+S-Pen",
-      "/placeholder.svg?height=600&width=600&text=Galaxy+S24+Ultra+Colors",
+      "/img/samsung/phone/fr-galaxy-s25-s938-sm-s938bzsdeub-544752320.png?height=600&width=600&text=Galaxy+S25+Ultra+Front",
+      "/img/samsung/phone/fr-galaxy-s25-s938-sm-s938bzsdeub-544752290.png?height=600&width=600&text=Galaxy+S25+Ultra+Back",
+      "/img/samsung/phone/fr-galaxy-s25-s938-sm-s938bzsdeub-544752285.png?height=600&width=600&text=Galaxy+S25+Ultra+S-Pen",
+      "/img/samsung/phone/WITB_Titanium-Whitesilver_MO.jpg?height=600&width=600&text=Galaxy+S25+Ultra+Colors",
     ],
     category: "Smartphones",
     rating: 4.7,
@@ -116,7 +119,7 @@ export const productsDatabase: Record<string, Product> = {
     colors: ["Titanium Black", "Titanium Gray", "Titanium Violet", "Titanium Yellow"],
     storage: ["256 Go", "512 Go", "1 To"],
     description:
-      "Le Galaxy S24 Ultra redéfinit l'innovation mobile avec Galaxy AI, un châssis en titane premium et le S Pen le plus avancé.",
+        "Le Galaxy S25 Ultra redéfinit l'innovation mobile avec Galaxy AI, un châssis en titane premium et le S Pen le plus avancé.",
     features: [
       "Galaxy AI intégré pour une productivité révolutionnaire",
       "Châssis en titane premium",
@@ -135,6 +138,7 @@ export const productsDatabase: Record<string, Product> = {
       Résistance: "IP68",
     },
     inStock: true,
+    color: "bg-lightGray"
   },
   "macbook-air-m2": {
     id: "macbook-air-m2",
@@ -154,7 +158,7 @@ export const productsDatabase: Record<string, Product> = {
     colors: ["Gris sidéral", "Argent", "Lumière stellaire", "Minuit"],
     storage: ["256 Go", "512 Go", "1 To", "2 To"],
     description:
-      "Le MacBook Air M2 combine design iconique et performances révolutionnaires dans un châssis ultra-fin et léger.",
+        "Le MacBook Air M2 combine design iconique et performances révolutionnaires dans un châssis ultra-fin et léger.",
     features: [
       "Puce M2 avec CPU 8 cœurs et GPU jusqu'à 10 cœurs",
       "Design repensé avec écran Liquid Retina 13,6 pouces",
@@ -181,7 +185,7 @@ export const productsDatabase: Record<string, Product> = {
     price: 699,
     originalPrice: 799,
     images: [
-      "/placeholder.svg?height=600&width=600&text=iPad+Air+M2+Front",
+      "/img/ipad.png?height=600&width=600&text=iPad+Air+M2+Front",
       "/placeholder.svg?height=600&width=600&text=iPad+Air+M2+Back",
       "/placeholder.svg?height=600&width=600&text=iPad+Air+M2+Pencil",
       "/placeholder.svg?height=600&width=600&text=iPad+Air+M2+Colors",
@@ -193,7 +197,7 @@ export const productsDatabase: Record<string, Product> = {
     colors: ["Gris sidéral", "Lumière stellaire", "Rose", "Violet", "Bleu"],
     storage: ["128 Go", "256 Go", "512 Go", "1 To"],
     description:
-      "L'iPad Air avec puce M2 offre des performances incroyables dans un design fin et léger, parfait pour la créativité et la productivité.",
+        "L'iPad Air avec puce M2 offre des performances incroyables dans un design fin et léger, parfait pour la créativité et la productivité.",
     features: [
       "Puce M2 avec CPU 8 cœurs et GPU 10 cœurs",
       "Écran Liquid Retina 10,9 pouces",
@@ -231,7 +235,7 @@ export const productsDatabase: Record<string, Product> = {
     colors: ["Aluminium Rose", "Aluminium Lumière stellaire", "Aluminium Minuit", "Aluminium (PRODUCT)RED"],
     sizes: ["41 mm", "45 mm"],
     description:
-      "L'Apple Watch Series 9 avec puce S9 offre des fonctionnalités de santé avancées et une expérience utilisateur révolutionnaire.",
+        "L'Apple Watch Series 9 avec puce S9 offre des fonctionnalités de santé avancées et une expérience utilisateur révolutionnaire.",
     features: [
       "Puce S9 avec Neural Engine 4 cœurs",
       "Écran Always-On Retina le plus lumineux",
@@ -258,7 +262,7 @@ export const productsDatabase: Record<string, Product> = {
     price: 279,
     originalPrice: 329,
     images: [
-      "/placeholder.svg?height=600&width=600&text=AirPods+Pro+2+Case",
+      "/img/airpods_max.png?height=600&width=600&text=AirPods+Pro+2+Case",
       "/placeholder.svg?height=600&width=600&text=AirPods+Pro+2+Earbuds",
       "/placeholder.svg?height=600&width=600&text=AirPods+Pro+2+Features",
       "/placeholder.svg?height=600&width=600&text=AirPods+Pro+2+Usage",
@@ -269,7 +273,7 @@ export const productsDatabase: Record<string, Product> = {
     badge: "-15%",
     colors: ["Blanc"],
     description:
-      "Les AirPods Pro (2e génération) offrent une expérience audio révolutionnaire avec l'Audio adaptatif et une réduction de bruit de niveau professionnel.",
+        "Les AirPods Pro (2e génération) offrent une expérience audio révolutionnaire avec l'Audio adaptatif et une réduction de bruit de niveau professionnel.",
     features: [
       "Puce H2 pour un son haute fidélité",
       "Réduction active du bruit jusqu'à 2x plus efficace",
@@ -307,7 +311,7 @@ export const productsDatabase: Record<string, Product> = {
     colors: ["Obsidian", "Porcelain", "Bay"],
     storage: ["128 Go", "256 Go", "512 Go", "1 To"],
     description:
-      "Le Pixel 8 Pro avec Google Tensor G3 et IA avancée offre la meilleure expérience photographique et Android pure.",
+        "Le Pixel 8 Pro avec Google Tensor G3 et IA avancée offre la meilleure expérience photographique et Android pure.",
     features: [
       "Google Tensor G3 avec IA avancée",
       "Écran Super Actua 6,7 pouces 120 Hz",
@@ -345,7 +349,7 @@ export const productsDatabase: Record<string, Product> = {
     badge: "Gaming",
     colors: ["Blanc", "Néon"],
     description:
-      "La Nintendo Switch OLED offre une expérience de jeu hybride unique avec un écran OLED vibrant de 7 pouces.",
+        "La Nintendo Switch OLED offre une expérience de jeu hybride unique avec un écran OLED vibrant de 7 pouces.",
     features: [
       "Écran OLED vibrant de 7 pouces",
       "Support ajustable large et robuste",
@@ -382,7 +386,7 @@ export const productsDatabase: Record<string, Product> = {
     reviews: 312,
     colors: ["Noir", "Argent"],
     description:
-      "Le casque Sony WH-1000XM5 offre la meilleure réduction de bruit au monde avec une qualité audio exceptionnelle.",
+        "Le casque Sony WH-1000XM5 offre la meilleure réduction de bruit au monde avec une qualité audio exceptionnelle.",
     features: [
       "Réduction de bruit leader de l'industrie",
       "Processeur V1 et puce QN1",
@@ -423,9 +427,9 @@ export function getProductsByCategory(category: string): Product[] {
 export function searchProducts(query: string): Product[] {
   const lowercaseQuery = query.toLowerCase()
   return Object.values(productsDatabase).filter(
-    (product) =>
-      product.name.toLowerCase().includes(lowercaseQuery) ||
-      product.category.toLowerCase().includes(lowercaseQuery) ||
-      product.description.toLowerCase().includes(lowercaseQuery),
+      (product) =>
+          product.name.toLowerCase().includes(lowercaseQuery) ||
+          product.category.toLowerCase().includes(lowercaseQuery) ||
+          product.description.toLowerCase().includes(lowercaseQuery),
   )
 }

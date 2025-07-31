@@ -25,6 +25,9 @@
     --ring: 221.2 83.2% 53.3%;
     --radius: 0.5rem;
   }
+  .theme {
+    --animate-gradient: gradient 8s linear infinite;
+  }
 }
 
 @layer base {
@@ -257,5 +260,13 @@ a:focus-visible {
 @media (max-width: 768px) {
   video {
     max-height: 40vh;
+  }
+}
+
+@theme inline {
+  @keyframes gradient {
+  to {
+    background-position: var(--bg-size, 300%) 0;
+    }
   }
 }

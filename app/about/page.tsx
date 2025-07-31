@@ -9,17 +9,17 @@ const values = [
   {
     title: "Accessibilité",
     description: "La technologie la plus puissante est celle que tout le monde peut utiliser.",
-    image: "/placeholder.svg?height=400&width=600&text=Accessibilité",
+    image: "/img/accessibility.jpg?height=400&width=600&text=Accessibilité",
   },
   {
     title: "Environnement",
     description: "Nous nous engageons pour une planète plus verte avec des produits durables.",
-    image: "/placeholder.svg?height=400&width=600&text=Environnement",
+    image: "/img/environnement.jpg?height=400&width=600&text=Environnement",
   },
   {
     title: "Confidentialité",
     description: "Vos données personnelles vous appartiennent. Point final.",
-    image: "/placeholder.svg?height=400&width=600&text=Confidentialité",
+    image: "/logo/shop 1.png?height=400&width=600&text=Confidentialité",
   },
   {
     title: "Inclusion",
@@ -107,13 +107,17 @@ export default function AboutPage() {
                   transforment leur quotidien.
                 </p>
               </div>
-              <div className="relative">
-                <img
-                  src="/placeholder.svg?height=500&width=600&text=Mission"
-                  alt="Notre mission"
-                  className="w-full h-auto rounded-2xl"
+              <div className="relative aspect-[6/5] w-full max-w-[600px] mx-auto">
+                <video
+                    src="/videos/2025-bespoke-home-n04-1-benefits-ai-home-mo.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover rounded-2xl"
                 />
               </div>
+
             </div>
           </div>
         </section>

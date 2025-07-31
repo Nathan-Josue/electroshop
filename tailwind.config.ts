@@ -10,9 +10,13 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "*.{js,ts,jsx,tsx,mdx}"
   ],
+	safelist: [
+		'bg-[#f7f7f7]',
+	],
   theme: {
   	extend: {
   		colors: {
+			lightGray: '#f7f7f7',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

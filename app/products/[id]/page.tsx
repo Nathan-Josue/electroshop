@@ -71,7 +71,7 @@ export default function ProductPage({ params }: ProductPageProps) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Galerie d'images - Style Apple */}
           <div className="space-y-4">
-            <div className="aspect-square bg-gray-50 rounded-3xl overflow-hidden">
+            <div className={`aspect-square ${product.color} rounded-3xl overflow-hidden`}>
               <Image
                 src={product.images[selectedImage] || "/placeholder.svg"}
                 alt={product.name}
@@ -86,7 +86,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                 <button
                   key={index}
                   onClick={() => setSelectedImage(index)}
-                  className={`aspect-square bg-gray-50 rounded-2xl overflow-hidden border-2 transition-all ${
+                  className={`aspect-square ${product.color} rounded-2xl overflow-hidden border-2 transition-all ${
                     selectedImage === index ? "border-blue-500" : "border-transparent hover:border-gray-300"
                   }`}
                 >

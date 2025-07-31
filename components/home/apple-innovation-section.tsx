@@ -135,7 +135,7 @@ export default function AppleInnovationSection() {
                   preload="metadata"
                 >
                   <source
-                    src="/videos/iphone.mp4"
+                    src="https://www.apple.com//105/media/ww/iphone/family/2025/e7ff365a-cb59-4ce9-9cdf-4cb965455b69/anim/welcome/small.mp4#t=2.973342"
                     type="video/mp4"
                   />
                   {/* Fallback image si la vidéo ne charge pas */}
