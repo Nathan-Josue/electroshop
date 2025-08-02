@@ -11,51 +11,66 @@ export default function Footer() {
             <h3 className="text-xs font-semibold text-gray-900 uppercase tracking-wide mb-4">Boutique</h3>
             <ul className="space-y-3">
               <li>
-                <Link
-                  href="/categories/smartphones"
-                  className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
-                >
-                  iPhone
+                <Link href="/categories/smartphones" className="text-sm font-semibold text-gray-800">
+                  Smartphones
                 </Link>
+                <ul className="ml-4 space-y-2 text-gray-600">
+                  <li><Link href="/categories/smartphones/apple" className="hover:text-gray-900">iPhone</Link></li>
+                  <li><Link href="/categories/smartphones/samsung" className="hover:text-gray-900">Samsung</Link></li>
+                  <li><Link href="/categories/smartphones/huawei" className="hover:text-gray-900">Huawei</Link></li>
+                  <li><Link href="/categories/smartphones/xiaomi" className="hover:text-gray-900">Xiaomi</Link></li>
+                  <li><Link href="/categories/smartphones/techno" className="hover:text-gray-900">Techno</Link></li>
+                  <li><Link href="/categories/smartphones/itel" className="hover:text-gray-900">Itel</Link></li>
+                </ul>
               </li>
+
               <li>
-                <Link
-                  href="/categories/computers"
-                  className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
-                >
-                  Mac
+                <Link href="/categories/computers" className="text-sm font-semibold text-gray-800">
+                  Ordinateurs
                 </Link>
+                <ul className="ml-4 space-y-2 text-gray-600">
+                  <li><Link href="/categories/computers/mac" className="hover:text-gray-900">Mac</Link></li>
+                  <li><Link href="/categories/computers/hp" className="hover:text-gray-900">HP</Link></li>
+                  <li><Link href="/categories/computers/lenovo" className="hover:text-gray-900">Lenovo</Link></li>
+                </ul>
               </li>
+
               <li>
-                <Link
-                  href="/categories/tablets"
-                  className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
-                >
-                  iPad
+                <Link href="/categories/tablets" className="text-sm font-semibold text-gray-800">
+                  Tablettes
                 </Link>
+                <ul className="ml-4 space-y-2 text-gray-600">
+                  <li><Link href="/categories/tablets/ipad" className="hover:text-gray-900">IPad</Link></li>
+                </ul>
               </li>
+
               <li>
-                <Link
-                  href="/categories/watches"
-                  className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
-                >
-                  Apple Watch
+                <Link href="/categories/watches" className="text-sm font-semibold text-gray-800">
+                  Montres connectées
                 </Link>
+                <ul className="ml-4 space-y-2 text-gray-600">
+                  <li><Link href="/categories/audio/airpods" className="hover:text-gray-900">Apple Watch</Link></li>
+                  <li><Link href="/categories/audio/sony" className="hover:text-gray-900">Smart Watch</Link></li>
+                </ul>
               </li>
+
               <li>
-                <Link href="/categories/audio" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
-                  AirPods
+                <Link href="/categories/audio" className="text-sm font-semibold text-gray-800">
+                  Audio
                 </Link>
+                <ul className="ml-4 space-y-2 text-gray-600">
+                  <li><Link href="/categories/audio/airpods" className="hover:text-gray-900">AirPods</Link></li>
+                  <li><Link href="/categories/audio/sony" className="hover:text-gray-900">Sony</Link></li>
+                </ul>
               </li>
+
               <li>
-                <Link
-                  href="/categories/accessories"
-                  className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
-                >
+                <Link href="/categories/accessories" className="text-sm font-semibold text-gray-800">
                   Accessoires
                 </Link>
               </li>
             </ul>
+
           </div>
 
           {/* Services */}

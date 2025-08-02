@@ -72,6 +72,7 @@ export default function ProductPage({ params }: ProductPageProps) {
           {/* Galerie d'images - Style Apple */}
           <div className="space-y-4">
             <div className={`aspect-square ${product.color} rounded-3xl overflow-hidden`}>
+
               <Image
                 src={product.images[selectedImage] || "/placeholder.svg"}
                 alt={product.name}

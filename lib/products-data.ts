@@ -27,7 +27,7 @@ export const productsDatabase: Record<string, Product> = {
     price: 1229,
     originalPrice: 1299,
     images: [
-      "/img/apple_intelligence.jpg?height=600&width=600&text=iPhone+16+Pro+Back",
+      "/img/apple_intelligence_1.png?height=600&width=600&text=iPhone+16+Pro+Back",
       "/img/apple_16_pro.jpg?height=600&width=600&text=iPhone+16+Pro+Front",
       "/img/apple_16_pro_taouch.jpg.jpg?height=600&width=600&text=iPhone+16+Pro+Side",
       "/img/hero_startframe__apple_16_pro.jpg?height=600&width=600&text=iPhone+16+Pro+Colors",
@@ -185,7 +185,7 @@ export const productsDatabase: Record<string, Product> = {
     price: 699,
     originalPrice: 799,
     images: [
-      "/img/ipad.png?height=600&width=600&text=iPad+Air+M2+Front",
+      "/img/ipad_1.png?height=600&width=600&text=iPad+Air+M2+Front",
       "/placeholder.svg?height=600&width=600&text=iPad+Air+M2+Back",
       "/placeholder.svg?height=600&width=600&text=iPad+Air+M2+Pencil",
       "/placeholder.svg?height=600&width=600&text=iPad+Air+M2+Colors",

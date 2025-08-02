@@ -58,7 +58,7 @@ const AppleFeaturedProducts = () => {
           {featuredProducts.map((product, index) => (
             <div
               key={product.id}
-              className={`${product.backgroundColor} rounded-3xl overflow-hidden relative min-h-[600px] flex flex-col justify-between p-8 group cursor-pointer transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl ${
+              className={`${product.backgroundColor} rounded-3xl overflow-hidden relative min-h-[300px] flex flex-col justify-between p-8 group cursor-pointer transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl ${
                 index === 0 ? "lg:col-span-2" : ""
               } ${visibleCards[index] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
               style={{
