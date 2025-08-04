@@ -76,8 +76,8 @@ export default function ProductPage({ params }: ProductPageProps) {
               <Image
                 src={product.images[selectedImage] || "/placeholder.svg"}
                 alt={product.name}
-                width={600}
-                height={600}
+                width={400}
+                height={400}
                 className="w-full h-full object-contain p-8"
               />
             </div>

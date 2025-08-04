@@ -15,7 +15,7 @@ export default function Footer() {
                   Smartphones
                 </Link>
                 <ul className="ml-4 space-y-2 text-gray-600">
-                  <li><Link href="/categories/smartphones/apple" className="hover:text-gray-900">iPhone</Link></li>
+                  <li><Link href="/categories/smartphones/iphone" className="hover:text-gray-900">iPhone</Link></li>
                   <li><Link href="/categories/smartphones/samsung" className="hover:text-gray-900">Samsung</Link></li>
                   <li><Link href="/categories/smartphones/huawei" className="hover:text-gray-900">Huawei</Link></li>
                   <li><Link href="/categories/smartphones/xiaomi" className="hover:text-gray-900">Xiaomi</Link></li>

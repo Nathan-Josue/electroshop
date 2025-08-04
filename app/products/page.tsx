@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Filter, Grid, List } from "lucide-react"
 import { getAllProducts } from "@/lib/products-data"
+import Publicit from "@/components/products/publicite";
 
 export default function ProductsPage() {
   const products = getAllProducts()
@@ -16,7 +17,11 @@ export default function ProductsPage() {
 
       <main className="max-w-7xl mx-auto px-4 py-8">
         {/* En-tête */}
-        <div className="text-center py-16 mb-12">
+        <div className="text-center mb-5 h-[60vh] rounded-3xl overflow-hidden">
+          <Publicit />
+        </div>
+
+        <div className="text-center py-16 mb-5">
           <h1 className="text-4xl md:text-6xl font-semibold text-black mb-4">Tous nos produits</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Découvrez notre gamme complète de produits électroniques premium

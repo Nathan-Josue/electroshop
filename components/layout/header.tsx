@@ -22,6 +22,8 @@ const navItems: NavItem[] = [
     submenu: [
       { href: "/products", label: "Tous les produits" },
       { href: "/products/new-arrivals", label: "Nouveautés" },
+      { href: "/categories/smartphones", label: "Mobiles" },
+      { href: "/categories/computers", label: "Ordinateurs" },
       { href: "/products/accessories", label: "Accessoires" },
       { href: "/products/deals", label: "Offres spéciales" },
     ],
@@ -29,13 +31,13 @@ const navItems: NavItem[] = [
   {
     label: "Marques",
     submenu: [
-      { href: "/", label: "Apple" },
-      { href: "/samsung", label: "Samsung" },
-      { href: "/infinix", label: "Infinix" },
-      { href: "/huawei", label: "Huawei" },
-      { href: "/xiaomi", label: "Xiaomi" },
-      { href: "/tecno", label: "Tecno" },
-      { href: "/itel", label: "Itel" },
+      { href: "/devices/apple", label: "Apple" },
+      { href: "/devices/samsung", label: "Samsung" },
+      { href: "/devices/infinix", label: "Infinix" },
+      { href: "/devices/huawei", label: "Huawei" },
+      { href: "/devices/xiaomi", label: "Xiaomi" },
+      { href: "/devices/tecno", label: "Tecno" },
+      { href: "/devices/itel", label: "Itel" },
     ],
   },
   {

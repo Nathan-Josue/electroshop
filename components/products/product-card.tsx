@@ -15,12 +15,14 @@ interface Product {
   name: string
   price: number
   originalPrice?: number
-  image: string
+  images: string[]  // ✅ Correction ici
   category: string
   rating: number
   reviews: number
   badge?: string
+  color?: string
 }
+
 
 interface ProductCardProps {
   product: Product
@@ -36,7 +38,7 @@ export default function ProductCard({ product }: ProductCardProps) {
       id: product.id,
       name: product.name,
       price: product.price,
-      image: product.image,
+      image: product.images[1],
       quantity: 1,
     })
     toast({
@@ -52,9 +54,9 @@ export default function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="group bg-[#F4F4F4] rounded-3xl shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 hover:-translate-y-2">
       <Link href={`/products/${product.id}`}>
-        <div className="relative bg-[#F4F4F4] aspect-square">
+        <div className={`relative ${product.color} aspect-square rounded-3xl`}>
           <Image
-            src={product.image || "/placeholder.svg"}
+            src={product.images[1] || "/placeholder.svg"}
             alt={product.name}
             width={400}
             height={400}
@@ -75,7 +77,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         </div>
       </Link>
 
-      <div className="p-6">
+      <div className="p-6 rounded-2xl">
         <div className="flex items-center justify-between mb-3">
           <Badge variant="secondary" className="text-xs font-medium bg-gray-100 text-gray-700">
             {product.category}

@@ -25,9 +25,10 @@ export const productsDatabase: Record<string, Product> = {
     name: "iPhone 16 Pro",
     tagline: "Titanium. So strong. So light. So Pro.",
     price: 1229,
-    originalPrice: 1299,
+    originalPrice: 1599,
     images: [
       "/img/apple_intelligence_1.png?height=600&width=600&text=iPhone+16+Pro+Back",
+      "/img/produit/iphone_16pro__erw9alves2qa_large.png?height=600&width=600&text=iPhone+16+Pro+Back",
       "/img/apple_16_pro.jpg?height=600&width=600&text=iPhone+16+Pro+Front",
       "/img/apple_16_pro_taouch.jpg.jpg?height=600&width=600&text=iPhone+16+Pro+Side",
       "/img/hero_startframe__apple_16_pro.jpg?height=600&width=600&text=iPhone+16+Pro+Colors",
@@ -59,8 +60,8 @@ export const productsDatabase: Record<string, Product> = {
     },
     inStock: true,
     color: "bg-black",
-
   },
+
   "macbook-pro-m3": {
     id: "macbook-pro-m3",
     name: 'MacBook Pro 14"',
@@ -101,7 +102,7 @@ export const productsDatabase: Record<string, Product> = {
     inStock: true,
   },
   "samsung-galaxy-s25-ultra": {
-    id: "samsung-galaxy-s25",
+    id: "samsung-galaxy-s25-ultra",
     name: "Samsung Galaxy S25 Ultra",
     tagline: "Galaxy AI is here. Epic just got easier.",
     price: 1299,
@@ -262,10 +263,10 @@ export const productsDatabase: Record<string, Product> = {
     price: 279,
     originalPrice: 329,
     images: [
-      "/img/airpods_max.png?height=600&width=600&text=AirPods+Pro+2+Case",
-      "/placeholder.svg?height=600&width=600&text=AirPods+Pro+2+Earbuds",
-      "/placeholder.svg?height=600&width=600&text=AirPods+Pro+2+Features",
-      "/placeholder.svg?height=600&width=600&text=AirPods+Pro+2+Usage",
+      "/img/produit/AirPods-Pro- (2e génération).png?height=600&width=600&text=AirPods+Pro+2+Case",
+      "/img/produit/battery_magsafe__b8uyauldcub6_large.jpg?height=600&width=600&text=AirPods+Pro+2+Earbuds",
+      "/img/produit/case_bottom__ftg24ec32pu2_large.png?height=600&width=600&text=AirPods+Pro+2+Features",
+      "/img/produit/case_closed__fn3wuwvygjau_large.png?height=600&width=600&text=AirPods+Pro+2+Usage",
     ],
     category: "Audio",
     rating: 4.8,
@@ -292,6 +293,7 @@ export const productsDatabase: Record<string, Product> = {
       Audio: "Audio spatial, Dolby Atmos",
     },
     inStock: true,
+    color: "bg-black"
   },
   "google-pixel-8": {
     id: "google-pixel-8",
@@ -335,13 +337,13 @@ export const productsDatabase: Record<string, Product> = {
     id: "nintendo-switch-oled",
     name: "Nintendo Switch OLED",
     tagline: "Play has no limits.",
-    price: 349,
-    originalPrice: 399,
+    price: 349.99,
+    originalPrice: 399.99,
     images: [
-      "/placeholder.svg?height=600&width=600&text=Switch+OLED+Console",
-      "/placeholder.svg?height=600&width=600&text=Switch+OLED+Dock",
-      "/placeholder.svg?height=600&width=600&text=Switch+OLED+Handheld",
-      "/placeholder.svg?height=600&width=600&text=Switch+OLED+Games",
+      "/img/produit/115461-switch-oled-white-boxart-1200x675.avif?height=600&width=600&text=Switch+OLED+Console",
+      "/img/produit/hand-dock-photo.avif?height=600&width=600&text=Switch+OLED+Dock",
+      "/img/produit/photo01.avif?height=600&width=600&text=Switch+OLED+Handheld",
+      "/img/produit/photo02.avif?height=600&width=600&text=Switch+OLED+Games",
     ],
     category: "Gaming",
     rating: 4.5,
