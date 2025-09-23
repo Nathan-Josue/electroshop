@@ -51,6 +51,7 @@ const AppleFeaturedProducts = () => {
     },
   ]
 
+
   return (
     <section ref={sectionRef} className="py-20 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
