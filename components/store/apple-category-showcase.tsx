@@ -8,37 +8,37 @@ const categories = [
   {
     name: "iPhone",
     href: "/categories/smartphones",
-    image: "/img/iphone_16pro.png?height=300&width=300&text=iPhone",
+    image: "/img/apple/iphone_16pro.png?height=300&width=300&text=iPhone",
     description: "Le smartphone le plus personnel au monde",
   },
   {
     name: "Mac",
     href: "/categories/computers",
-    image: "/img/macbook_pro_16.jpg?height=300&width=300&text=Mac",
+    image: "/img/apple/macbook_pro_16.png?height=300&width=300&text=Mac",
     description: "Puissance et performance redéfinies",
   },
   {
     name: "iPad",
     href: "/categories/tablets",
-    image: "/img/ipad.png?height=300&width=300&text=iPad",
+    image: "/img/apple/ipad.png?height=300&width=300&text=iPad",
     description: "Votre prochain ordinateur n'est pas un ordinateur",
   },
   {
     name: "Apple Watch",
     href: "/categories/watches",
-    image: "/img/apple_wacht.png?height=300&width=300&text=Apple+Watch",
+    image: "/img/apple/apple_wacht.png?height=300&width=300&text=Apple+Watch",
     description: "L'avenir de la santé sur votre poignet",
   },
   {
     name: "AirPods",
     href: "/categories/audio",
-    image: "/img/airpods_max.png?height=300&width=300&text=AirPods",
+    image: "/img/apple/airpods_max.png?height=300&width=300&text=AirPods",
     description: "Audio magique à portée d'oreille",
   },
   {
     name: "Accessoires",
     href: "/categories/accessories",
-    image: "/img/accessoires.png?height=300&width=300&text=Accessoires",
+    image: "/img/apple/accessoires.png?height=300&width=300&text=Accessoires",
     description: "Explorez les accessoires Apple",
   },
 ]

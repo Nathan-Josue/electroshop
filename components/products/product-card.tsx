@@ -9,20 +9,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { useCart } from "@/components/cart/cart-context"
 import { useToast } from "@/hooks/use-toast"
-
-interface Product {
-  id: string
-  name: string
-  price: number
-  originalPrice?: number
-  images: string[]  // ✅ Correction ici
-  category: string
-  rating: number
-  reviews: number
-  badge?: string
-  color?: string
-}
-
+import {Product} from "@/app/type/product";
 
 interface ProductCardProps {
   product: Product
@@ -38,7 +25,7 @@ export default function ProductCard({ product }: ProductCardProps) {
       id: product.id,
       name: product.name,
       price: product.price,
-      image: product.images[1],
+      image: product.images[0],
       quantity: 1,
     })
     toast({

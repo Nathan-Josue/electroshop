@@ -4,42 +4,8 @@ import { useEffect } from "react";
 import "swiper/css";
 import "@/styles/publicite.css";
 import Link from "next/link";
-const publicity = [
-    {
-        src: "/pub/pub_iphone_16_pro.png",
-        alt: "Pub Iphone 16 Pro",
-        bgColor: "#000000",
-        title: "Offre Apple",
-        link:"/"
-    },
-    {src: "/pub/style_phone_new.png",
-        alt: "itel A90",
-        bgColor: "#fcfcfc",
-        title: "itel A90",
-        link:"/"
-    },
-    {
-        src: "/pub/25C3-FR-Summer-Days-SB-Hero.png",
-        alt: "Summer Days HP",
-        bgColor: "#CBDAFD",
-        title: "HP",
-        link:""
-    },
-    {
-        src: "/pub/23C3-FR-Generic-Wave1-Store-Banners-DLP-720x425-MASTER.png",
-        alt: "Nos meilleures offres",
-        bgColor: "#FAA855",
-        title: "Nos offres",
-        link:""
-    },
-    {
-        src: "/pub/24C2-FR-Voco-Gaming-Campaign-SB-DLP-2-963x568.png",
-        alt: "Découvrez nos packs déjà remisés !",
-        bgColor: "#FB1559",
-        title: "Nos packs",
-        link:""
-    },
-];
+import {publicity} from "@/data/publicity-data";
+
 export default function Publicit() {
 
     useEffect(() => {

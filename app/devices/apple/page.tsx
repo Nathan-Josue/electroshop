@@ -1,12 +1,12 @@
 import { Suspense } from "react"
 import Header from "@/components/layout/header"
 import Footer from "@/components/layout/footer"
-import AppleHeroSection from "@/components/home/apple-hero-section"
-import AppleFeaturedProducts from "@/components/home/apple-featured-products"
-import AppleCategoryShowcase from "@/components/home/apple-category-showcase"
-import AppleInnovationSection from "@/components/home/apple-innovation-section"
+import AppleHeroSection from "@/components/store/apple-hero-section"
+import AppleFeaturedProducts from "@/components/store/apple-featured-products"
+import AppleCategoryShowcase from "@/components/store/apple-category-showcase"
+import AppleInnovationSection from "@/components/store/apple-innovation-section"
 import { Skeleton } from "@/components/ui/skeleton"
-import Banner from "@/components/home/banner";
+import Banner from "@/components/store/banner";
 
 export default function ApplePage() {
   return (

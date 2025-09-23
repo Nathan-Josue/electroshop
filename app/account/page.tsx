@@ -29,11 +29,11 @@ import { useToast } from "@/hooks/use-toast"
 
 // Données simulées
 const userData = {
-  name: "Marie Dubois",
-  email: "marie.dubois@email.com",
+  name: "Nathan N'Guessan",
+  email: "nathan.nguessan@email.com",
   phone: "+33 6 12 34 56 78",
   avatar: "/placeholder.svg?height=100&width=100&text=MD",
-  memberSince: "2022",
+  memberSince: "2024",
   totalOrders: 12,
   totalSpent: 4567,
 }
@@ -72,19 +72,19 @@ const addresses = [
   {
     id: 1,
     type: "Domicile",
-    name: "Marie Dubois",
+    name: "Nathan N'Guessan",
     street: "123 Rue de la Paix",
-    city: "75001 Paris",
-    country: "France",
+    city: "75001 Yopougon",
+    country: "Cote d'Ivoire",
     isDefault: true,
   },
   {
     id: 2,
     type: "Bureau",
-    name: "Marie Dubois",
+    name: "Nathan N'Guessan",
     street: "456 Avenue des Champs",
-    city: "75008 Paris",
-    country: "France",
+    city: "75008 Yopougon",
+    country: "Cote d'Ivoire",
     isDefault: false,
   },
 ]
@@ -104,6 +104,13 @@ const paymentMethods = [
     expiry: "09/25",
     isDefault: false,
   },
+    {
+        id: 3,
+        type: "djamo",
+        last4: "8888",
+        expiry: "10/25",
+        isDefault: false,
+    },
 ]
 
 export default function AccountPage() {

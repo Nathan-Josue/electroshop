@@ -1,0 +1,233 @@
+export const xiaomiProducts = [
+    {
+        id: "xiaomi-14-ultra",
+        name: "Xiaomi 14 Ultra",
+        tagline: "Masterpiece in Sight",
+        price: 1099,
+        originalPrice: 1199,
+        images: [
+            "/img/xiaomi/custom_filename 1.png?height=400&width=400&query=Xiaomi+14+Ultra+smartphone",
+            "/img/xiaomi/51uTfDzsKML._AC_SL1000_.png?height=400&width=400&query=Xiaomi+14+Ultra+smartphone",
+        ],
+        category: "Smartphones",
+        rating: 4.8,
+        reviews: 300,
+        badge: "Nouveau",
+        colors: ["Black", "White", "Titanium"],
+        storage: ["256 Go", "512 Go", "1 To"],
+        description: "Le Xiaomi 14 Ultra allie performance et design avec un écran AMOLED de pointe et un système photo révolutionnaire.",
+        features: [
+            "Écran AMOLED 6.7 pouces, 120 Hz",
+            "Processeur Snapdragon 8 Gen 2",
+            "Caméra principale 50 MP avec stabilisation optique",
+            "Batterie 5000 mAh avec recharge rapide 120W",
+            "Système audio Harman Kardon",
+        ],
+        specifications: {
+            Écran: "AMOLED 6.7 pouces, 120 Hz",
+            Processeur: "Snapdragon 8 Gen 2",
+            Caméra: "50 MP (principal) + 48 MP (ultra grand-angle) + 48 MP (téléobjectif)",
+            Batterie: "5000 mAh, recharge rapide 120W",
+            RAM: "12 Go",
+            Stockage: "256 Go / 512 Go / 1 To",
+            Connectivité: "5G, Wi-Fi 6E, Bluetooth 5.3",
+            OS: "MIUI basé sur Android 13",
+            Résistance: "IP68 (résistant à l'eau et à la poussière)",
+        },
+        inStock: false,
+    },
+    {
+        id: "xiaomi-pad-6s-pro",
+        name: "Xiaomi Pad 6S Pro",
+        tagline: "Power for your creativity",
+        price: 699,
+        originalPrice: 749,
+        images: [
+            "/img/xiaomi/tablet/xiaomi-pad-6s-pro.png?height=400&width=400&query=Xiaomi+Pad+6S+Pro+tablet",
+            "/img/xiaomi/e22707982190cc2587fde3afa3d54567 1.png?height=400&width=400&query=Xiaomi+Pad+6S+Pro+tablet"
+        ],
+        category: "Tablettes",
+        rating: 4.6,
+        reviews: 150,
+        badge: "Populaire",
+        colors: ["Graphite Gray", "Mint Green"],
+        storage: ["256 Go", "512 Go"],
+
+        description: "La Xiaomi Pad 6S Pro offre puissance et polyvalence pour stimuler votre créativité avec un écran large et une autonomie longue durée.",
+
+        features: [
+            "Écran LCD 11 pouces, 120 Hz",
+            "Processeur MediaTek Dimensity 9200+",
+            "Système audio quad haut-parleurs",
+            "Batterie 8600 mAh avec charge rapide 67W",
+            "Prise en charge du stylet Xiaomi Smart Pen",
+        ],
+
+        specifications: {
+            Écran: "LCD 11 pouces, 120 Hz",
+            Processeur: "MediaTek Dimensity 9200+",
+            Audio: "Quad haut-parleurs avec support Dolby Atmos",
+            Batterie: "8600 mAh, charge rapide 67W",
+            RAM: "8 Go",
+            Stockage: "256 Go / 512 Go",
+            Connectivité: "5G, Wi-Fi 6, Bluetooth 5.3",
+            OS: "MIUI Pad basé sur Android 13",
+            Résistance: "IP52 (résistance aux éclaboussures)",
+        },
+
+        inStock: true,
+    },
+    {
+        id: "xiaomi-watch-s3",
+        name: "Xiaomi Watch S3",
+        tagline: "Style and Smartness",
+        price: 149,
+        originalPrice: 169,
+        images: [
+            "/img/xiaomi/watch/51x9OFfwRGL._AC_SL1000_.png?height=400&width=400&query=Xiaomi+Watch+S3+smartwatch",
+            "/img/xiaomi/watch/51lcU9Ck0aL._AC_SL1000_.png?height=400&width=400&query=Xiaomi+Watch+S3+smartwatch",
+            "/img/xiaomi/watch/41bKr5LEDYL._AC_SL1000_.png?height=400&width=400&query=Xiaomi+Watch+S3+smartwatch",
+            "/img/xiaomi/watch/41ddSAx-TqL._AC_SL1000_.png?height=400&width=400&query=Xiaomi+Watch+S3+smartwatch",
+            "/img/xiaomi/watch/51nhDOVDtvL._AC_SL1000_.png?height=400&width=400&query=Xiaomi+Watch+S3+smartwatch",
+        ],
+        category: "Montres",
+        rating: 4.5,
+        reviews: 100,
+        badge: "-12%",
+        colors: ["Black", "Silver"],
+        sizes: ["46mm"],
+
+        description: "La Xiaomi Watch S3 allie design élégant et fonctionnalités avancées pour un compagnon connecté au quotidien.",
+
+        features: [
+            "Écran AMOLED 1.43 pouces",
+            "Suivi cardio et sommeil avancé",
+            "GPS intégré",
+            "Autonomie jusqu'à 14 jours",
+            "Notifications et appels Bluetooth",
+        ],
+
+        specifications: {
+            Écran: "AMOLED 1.43 pouces, 326 ppi",
+            Capteurs: "Cardiofréquencemètre, SpO2, accéléromètre, gyroscope",
+            Connectivité: "Bluetooth 5.3, GPS",
+            Batterie: "420 mAh, autonomie jusqu'à 14 jours",
+            Résistance: "IP68 (résistant à l’eau et à la poussière)",
+            OS: "Propriétaire Xiaomi",
+            Compatibilité: "Android 6.0+ et iOS 10.0+",
+        },
+
+        inStock: true,
+    },
+    {
+        id: "xiaomi-buds-4-pro",
+        name: "Xiaomi Buds 4 Pro",
+        tagline: "Immersive Sound",
+        price: 199,
+        originalPrice: 229,
+        images: [
+            "/img/xiaomi/audio/xiaomi-buds-4-pro.png?height=400&width=400&query=Xiaomi+Buds+4+Pro+earbuds"
+        ],
+        category: "Audio",
+        rating: 4.4,
+        reviews: 120,
+        badge: "-13%",
+        colors: ["Black", "Gold"],
+
+        description: "Les Xiaomi Buds 4 Pro offrent un son immersif avec réduction active du bruit et une qualité audio haute fidélité.",
+
+        features: [
+            "Réduction active du bruit (ANC)",
+            "Qualité audio Hi-Res",
+            "Autonomie jusqu’à 9 heures avec ANC activé",
+            "Connexion Bluetooth 5.3",
+            "Charge rapide sans fil",
+        ],
+
+        specifications: {
+            Connectivité: "Bluetooth 5.3",
+            Autonomie: "Jusqu’à 9 heures (ANC activé), 28 heures avec boîtier",
+            Résistance: "IP54 (résistant à la transpiration et aux éclaboussures)",
+            Poids: "5.4 g par écouteur",
+            Microphones: "3 microphones avec réduction du bruit",
+        },
+
+        inStock: true,
+    },
+    {
+        id: "xiaomi-tv-a-pro",
+        name: "Xiaomi TV A Pro",
+        tagline: "Stunning Visuals",
+        price: 499,
+        originalPrice: 549,
+        images: [
+            "/img/xiaomi/tv/xiaomi-tv-a-pro.png?height=400&width=400&query=Xiaomi+TV+A+Pro+television"
+        ],
+        category: "TV & Écrans",
+        rating: 4.7,
+        reviews: 80,
+        colors: ["Black"],
+        sizes: ["55 pouces", "65 pouces"],
+
+        description: "La Xiaomi TV A Pro offre une qualité d’image exceptionnelle avec un design élégant et des fonctionnalités smart avancées.",
+
+        features: [
+            "Écran 4K UHD avec HDR10+",
+            "Android TV avec Google Assistant intégré",
+            "Connectivité Wi-Fi et Bluetooth",
+            "Système audio Dolby Audio",
+            "Télécommande vocale",
+        ],
+
+        specifications: {
+            Écran: "4K UHD, 55\" ou 65\"",
+            Résolution: "3840 x 2160 pixels",
+            Système: "Android TV",
+            Connectivité: "Wi-Fi, Bluetooth 5.0, HDMI x3, USB x2",
+            Audio: "Dolby Audio, DTS-HD",
+            Résistance: "Norme standard (pas d’étanchéité spécifique)",
+        },
+
+        inStock: true,
+    },
+    {
+        id: "redmi-book-pro-16",
+        name: "RedmiBook Pro 16",
+        tagline: "Powerful and Portable",
+        price: 999,
+        originalPrice: 1099,
+        images: [
+            "/img/xiaomi/laptop/redmibook-pro-16.png?height=400&width=400&query=RedmiBook+Pro+16+laptop"
+        ],
+        category: "Ordinateurs",
+        rating: 4.5,
+        reviews: 70,
+        colors: ["Space Gray"],
+        storage: ["512 Go", "1 To"],
+
+        description: "Le RedmiBook Pro 16 combine puissance et portabilité avec un écran haute résolution et des performances optimisées pour le travail et le divertissement.",
+
+        features: [
+            "Écran IPS 16 pouces, 2560 x 1600 pixels",
+            "Processeur Intel Core i7 de 12e génération",
+            "Carte graphique NVIDIA GeForce RTX 3050",
+            "Mémoire RAM jusqu'à 16 Go",
+            "Stockage SSD rapide jusqu'à 1 To",
+            "Clavier rétroéclairé et connectivité complète",
+        ],
+
+        specifications: {
+            Écran: "IPS 16 pouces, 2560 x 1600 pixels",
+            Processeur: "Intel Core i7-12700H",
+            GPU: "NVIDIA GeForce RTX 3050",
+            RAM: "16 Go DDR4",
+            Stockage: "512 Go / 1 To SSD",
+            Connectivité: "Wi-Fi 6, Bluetooth 5.2, USB-C, HDMI",
+            Batterie: "70 Wh, autonomie jusqu’à 12 heures",
+            OS: "Windows 11",
+            Résistance: "Norme standard (pas d’étanchéité spécifique)",
+        },
+
+        inStock: true,
+    },
+];

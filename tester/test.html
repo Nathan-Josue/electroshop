@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chargement...</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background: white;
+            font-family: Arial, sans-serif;
+        }
+        .spinner {
+            width: 60px;
+            height: 60px;
+            border: 6px solid #ddd;
+            border-top: 6px solid #ff6f61;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="spinner"></div>
+<p>Chargement de votre produit...</p>
+
+<script>
+    // Récupérer l'URL du produit depuis les paramètres
+    const params = new URLSearchParams(window.location.search);
+    const urlProduit = params.get('url');
+
+    // Attendre 2 secondes puis rediriger
+    setTimeout(() => {
+        if (urlProduit) {
+            window.location.href = urlProduit;
+        }
+    }, 2000);
+</script>
+
+</body>
+</html>
