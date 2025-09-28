@@ -14,11 +14,11 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'ElectroShop - Boutique Électronique Moderne',
         description: "Découvrez notre sélection de produits électroniques",
-        url: 'https://electroshop.vercel.app', // adapte avec ton vrai domaine
+        url: 'https://electroshopci.vercel.app',
         siteName: 'ElectroShop',
         images: [
             {
-                url: 'https://electroshop.vercel.app/preview.png', // ajoute une image de prévisualisation adaptée
+                url: 'https://electroshopci.vercel.app/preview.png', // ajoute une image de prévisualisation adaptée
                 width: 1200,
                 height: 630,
             },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
         locale: 'fr_FR',
         type: 'website',
     },
-    verification: {
-        google: 'TON_CODE_GOOGLE_VERIFICATION_ICI', // ajoute ton code Search Console
-    },
+    // verification: {
+    //     google: 'TON_CODE_GOOGLE_VERIFICATION_ICI', // ajoute ton code Search Console
+    // },
     robots: {
         index: true,
         follow: true,
