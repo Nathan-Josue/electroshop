@@ -1,16 +1,31 @@
+"use client"
+
+import {useEffect, useState} from "react";
 import Header from "@/components/layout/header"
 import Footer from "@/components/layout/footer"
 import ProductCard from "@/components/products/product-card"
 import { Button } from "@/components/ui/button"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Filter, Grid, List } from "lucide-react"
-import { getAllProducts } from "@/lib/products-data"
+import {getAllProducts, getProductsByBrand} from "@/lib/products-data"
 import Publicit from "@/components/products/publicite";
+import {Product} from "@/app/type/all-product";
+import {ProductFilterSidebar} from "@/components/product-filter-sidebar";
+import { motion } from "motion/react";
 
 export default function ProductsPage() {
-  const products = getAllProducts()
+    const [products, setProducts] = useState<Product[]>([])
 
-  // @ts-ignore
+    useEffect(() => {
+        const params = new URLSearchParams(window.location.search)
+        const brand = params.get("brand") // Récupère "Samsung", "Apple", etc.
+
+        const filteredProducts = brand
+            ? getProductsByBrand(brand)
+            : getAllProducts()
+
+        setProducts(filteredProducts)
+    }, [])
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -78,9 +93,23 @@ export default function ProductsPage() {
 
         {/* Grille de produits */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
+            <div className="col-span-1">
+                <ProductFilterSidebar/>
+            </div>
+
+            <div className="col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+                {products.map((product, index) => (
+                    <motion.div
+                        key={product.id}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: index * 0.1, duration: 0.4, ease: "easeOut" }}
+                    >
+                        <ProductCard product={product} />
+                    </motion.div>
+                ))}
+            </div>
+
         </div>
 
         {/* Pagination */}

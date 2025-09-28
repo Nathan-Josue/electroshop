@@ -11,17 +11,17 @@ import Banner from "@/components/store/banner";
 export default function ApplePage() {
   return (
     <div className="min-h-screen bg-white">
-      <Header />
+        <Header />
         <Banner/>
-      <main>
-        <AppleHeroSection />
-        <Suspense fallback={<ProductsSkeleton />}>
-          <AppleFeaturedProducts />
-        </Suspense>
-        <AppleCategoryShowcase />
-        <AppleInnovationSection />
-      </main>
-      <Footer />
+        <main>
+            <AppleHeroSection />
+            <Suspense fallback={<ProductsSkeleton />}>
+                <AppleFeaturedProducts />
+            </Suspense>
+            <AppleCategoryShowcase />
+            <AppleInnovationSection />
+        </main>
+        <Footer />
     </div>
   )
 }

@@ -1,11 +1,13 @@
 import {Product} from "@/app/type/all-product";
-export const productsDatabase: Record<string, Product> = {
-    "iphone-16-pro": {
+
+export const appleProducts : Product[] = [
+    {
         id: "iphone-16-pro",
+        brand: "Apple",
         name: "iPhone 16 Pro",
         tagline: "Titanium. So strong. So light. So Pro.",
-        price: 1229,
-        originalPrice: 1599,
+        price: 650*1229,
+        originalPrice: 650*1599,
         images: [
             "/img/apple/apple_intelligence_1.png?height=600&width=600&text=iPhone+16+Pro+Back",
             "/img/apple/iphone_16pro.png?height=600&width=600&text=iPhone+16+Pro+Back",
@@ -38,20 +40,19 @@ export const productsDatabase: Record<string, Product> = {
             Résistance: "IP68",
         },
         inStock: true,
-        // color: "bg-black",
     },
-    "macbook-pro-m3": {
+    {
         id: "macbook-pro-m3",
+        brand: "Apple",
         name: 'MacBook Pro 14"',
         tagline: "Mind-blowing. Head-turning.",
-        price: 2199,
-        originalPrice: 2399,
+        price: 650*2199,
+        originalPrice: 650*2399,
         images: [
             "/img/apple/1_0c832e00-14d5-4c18-926e-d9ff114f8876_1024x1024.png?height=600&width=600&text=MacBook+Pro+M3+Side",
             "/img/apple/Watermarkcopy_04d6cff5-e035-4d77-a1bb-59bc329d8c71_1024x1024.png?height=600&width=600&text=MacBook+Pro+M3+Open",
             "/img/apple/MacBookPro-14-M3-Silver-B.png?height=600&width=600&text=MacBook+Pro+M3+Ports",
             "/img/apple/apple_macbook_pro_14_laptop_m3_18gb_512b_macos_space_black_ac72332_23482.png?height=600&width=600&text=MacBook+Pro+M3+Closed",
-
         ],
         category: "Ordinateurs",
         rating: 4.9,
@@ -59,8 +60,7 @@ export const productsDatabase: Record<string, Product> = {
         badge: "Promo",
         colors: ["Gris sidéral", "Argent"],
         storage: ["512 Go", "1 To", "2 To", "4 To"],
-        description:
-            "Le MacBook Pro 14 pouces avec puce M3 Pro offre des performances révolutionnaires pour les professionnels les plus exigeants.",
+        description: "Le MacBook Pro 14 pouces avec puce M3 Pro offre des performances révolutionnaires pour les professionnels les plus exigeants.",
         features: [
             "Puce M3 Pro avec CPU 11 cœurs et GPU 14 cœurs",
             "Écran Liquid Retina XDR 14,2 pouces",
@@ -80,52 +80,13 @@ export const productsDatabase: Record<string, Product> = {
         },
         inStock: true,
     },
-    "samsung-galaxy-s25-ultra": {
-        id: "samsung-galaxy-s25-ultra",
-        name: "Samsung Galaxy S25 Ultra",
-        tagline: "Galaxy AI is here. Epic just got easier.",
-        price: 1299,
-        originalPrice: 1399,
-        images: [
-            "/img/samsung/phone/fr-galaxy-s25-s938-sm-s938bzsdeub-544752290.png?height=600&width=600&text=Galaxy+S25+Ultra+Back",
-            "/img/samsung/phone/fr-galaxy-s25-s938-sm-s938bzsdeub-544752320.png?height=600&width=600&text=Galaxy+S25+Ultra+Front",
-            "/img/samsung/phone/fr-galaxy-s25-s938-sm-s938bzsdeub-544752285.png?height=600&width=600&text=Galaxy+S25+Ultra+S-Pen",
-            "/img/samsung/phone/WITB_Titanium-Whitesilver_MO.jpg?height=600&width=600&text=Galaxy+S25+Ultra+Colors",
-        ],
-        category: "Smartphones",
-        rating: 4.7,
-        reviews: 256,
-        badge: "Populaire",
-        colors: ["Titanium Black", "Titanium Gray", "Titanium Violet", "Titanium Yellow"],
-        storage: ["256 Go", "512 Go", "1 To"],
-        description:
-            "Le Galaxy S25 Ultra redéfinit l'innovation mobile avec Galaxy AI, un châssis en titane premium et le S Pen le plus avancé.",
-        features: [
-            "Galaxy AI intégré pour une productivité révolutionnaire",
-            "Châssis en titane premium",
-            "Écran Dynamic AMOLED 2X 6,8 pouces",
-            "Système de caméra 200 Mpx avec zoom 100x",
-            "S Pen intégré avec nouvelles fonctionnalités AI",
-            "Batterie 5000 mAh avec charge rapide 45W",
-        ],
-        specifications: {
-            Écran: "Dynamic AMOLED 2X 6,8 pouces",
-            Processeur: "Snapdragon 8 Gen 3",
-            Stockage: "256 Go à 1 To",
-            Caméra: "200 Mpx Principal, 50 Mpx Téléobjectif, 10 Mpx Téléobjectif, 12 Mpx Ultra grand-angle",
-            Batterie: "5000 mAh avec charge rapide 45W",
-            Connectivité: "5G, Wi-Fi 7, Bluetooth 5.3",
-            Résistance: "IP68",
-        },
-        inStock: true,
-        color: "bg-lightGray"
-    },
-    "macbook-air-m2": {
+    {
         id: "macbook-air-m2",
+        brand: "Apple",
         name: 'MacBook Air 13"',
         tagline: "Supercharged by M2. Redesigned around the chip.",
-        price: 1299,
-        originalPrice: 1499,
+        price: 650*1299,
+        originalPrice: 650*1499,
         images: [
             "/img/apple/apple_13inch_macbook_air_m4_16gb_256gb_macos_midnight_ac83665_41663.png?height=600&width=600&text=MacBook+Air+M2+Open",
             "/img/apple/apple_13inch_macbook_air_m4_16gb_256gb_macos_midnight_ac83665_27048.png?height=600&width=600&text=MacBook+Air+M2+Closed",
@@ -137,8 +98,7 @@ export const productsDatabase: Record<string, Product> = {
         reviews: 234,
         colors: ["Gris sidéral", "Argent", "Lumière stellaire", "Minuit"],
         storage: ["256 Go", "512 Go", "1 To", "2 To"],
-        description:
-            "Le MacBook Air M2 combine design iconique et performances révolutionnaires dans un châssis ultra-fin et léger.",
+        description: "Le MacBook Air M2 combine design iconique et performances révolutionnaires dans un châssis ultra-fin et léger.",
         features: [
             "Puce M2 avec CPU 8 cœurs et GPU jusqu'à 10 cœurs",
             "Design repensé avec écran Liquid Retina 13,6 pouces",
@@ -158,12 +118,13 @@ export const productsDatabase: Record<string, Product> = {
         },
         inStock: true,
     },
-    "ipad-air-m2": {
+    {
         id: "ipad-air-m2",
+        brand: "Apple",
         name: "iPad Air",
         tagline: "Light. Bright. Full of might.",
-        price: 699,
-        originalPrice: 799,
+        price: 650*699,
+        originalPrice: 650*799,
         images: [
             "/img/apple/apple-ipad-air-hero_screen.png?height=600&width=600&text=iPad+Air+M2+Front",
             "/img/apple/ipad_1.png?height=600&width=600&text=iPad+Air+M2+Back",
@@ -176,8 +137,7 @@ export const productsDatabase: Record<string, Product> = {
         badge: "-12%",
         colors: ["Gris sidéral", "Lumière stellaire", "Rose", "Violet", "Bleu"],
         storage: ["128 Go", "256 Go", "512 Go", "1 To"],
-        description:
-            "L'iPad Air avec puce M2 offre des performances incroyables dans un design fin et léger, parfait pour la créativité et la productivité.",
+        description: "L'iPad Air avec puce M2 offre des performances incroyables dans un design fin et léger, parfait pour la créativité et la productivité.",
         features: [
             "Puce M2 avec CPU 8 cœurs et GPU 10 cœurs",
             "Écran Liquid Retina 10,9 pouces",
@@ -197,12 +157,13 @@ export const productsDatabase: Record<string, Product> = {
         },
         inStock: true,
     },
-    "apple-watch-series-10": {
+    {
         id: "apple-watch-series-10",
+        brand: "Apple",
         name: "Apple Watch Series 10",
         tagline: "Smarter. Brighter. Mightier.",
-        price: 449,
-        originalPrice: 499,
+        price: 650*449,
+        originalPrice: 650*499,
         images: [
             "/img/apple/display_static__d0bsfkqzo6s2_medium_2x.png?height=600&width=600&text=Apple+Watch+S10+Face",
             "/img/apple/welcome_hero_endframe__d71hj6st53gy_medium_2x.png?height=600&width=600&text=Apple+Watch+S10+Side",
@@ -214,8 +175,7 @@ export const productsDatabase: Record<string, Product> = {
         reviews: 234,
         colors: ["Aluminium Rose", "Aluminium Lumière stellaire", "Aluminium Minuit", "Aluminium (PRODUCT)RED"],
         sizes: ["41 mm", "45 mm"],
-        description:
-            "L'Apple Watch Series 9 avec puce S9 offre des fonctionnalités de santé avancées et une expérience utilisateur révolutionnaire.",
+        description: "L'Apple Watch Series 9 avec puce S9 offre des fonctionnalités de santé avancées et une expérience utilisateur révolutionnaire.",
         features: [
             "Puce S9 avec Neural Engine 4 cœurs",
             "Écran Always-On Retina le plus lumineux",
@@ -235,12 +195,13 @@ export const productsDatabase: Record<string, Product> = {
         },
         inStock: true,
     },
-    "airpods-pro-2": {
+    {
         id: "airpods-pro-2",
+        brand: "Apple",
         name: "AirPods Pro (2e génération)",
         tagline: "Adaptive Audio. Now playing.",
-        price: 279,
-        originalPrice: 329,
+        price: 650*279,
+        originalPrice: 650*329,
         images: [
             "/img/apple/AirPods-Pro- (2e génération).png?height=600&width=600&text=AirPods+Pro+2+Case",
             "/img/apple/battery_magsafe__b8uyauldcub6_large.png?height=600&width=600&text=AirPods+Pro+2+Earbuds",
@@ -252,8 +213,7 @@ export const productsDatabase: Record<string, Product> = {
         reviews: 567,
         badge: "-15%",
         colors: ["Blanc"],
-        description:
-            "Les AirPods Pro (2e génération) offrent une expérience audio révolutionnaire avec l'Audio adaptatif et une réduction de bruit de niveau professionnel.",
+        description: "Les AirPods Pro (2e génération) offrent une expérience audio révolutionnaire avec l'Audio adaptatif et une réduction de bruit de niveau professionnel.",
         features: [
             "Puce H2 pour un son haute fidélité",
             "Réduction active du bruit jusqu'à 2x plus efficace",
@@ -272,119 +232,5 @@ export const productsDatabase: Record<string, Product> = {
             Audio: "Audio spatial, Dolby Atmos",
         },
         inStock: true,
-        // color: "bg-black"
     },
-    "google-pixel-9": {
-        id: "google-pixel-9",
-        name: "Google Pixel 9 Pro",
-        tagline: "The most helpful Pixel yet.",
-        price: 899,
-        originalPrice: 999,
-        images: [
-            "/img/google/-RbhKMOL8MZmpZpQhxxDDjgNdaOJqV6cj_Cgpn6gK-41JtuhiU4yfwj--QIoFErN4gVpVTaqlhR-wdyaYSgK3d7P3OWcglm9N2oE=s4092-w4092-e365-rw-v0-nu.png?height=600&width=600&text=Pixel+9+Pro+Front",
-            "/img/google/NpLSqBwuQLjdE3K-4pJpzIUquLl2qYKSSdxs8KhZsEBo_O7r3Tq1nlVCx0gq5OZZ-5_yqETPCGwczEolWYyjlrKigMrzgZWGXFaT=s4092-w4092-e365-rw-v0-nu.png?height=600&width=600&text=Pixel+9+Pro+Back",
-            "/img/google/4ur8Ma14DDmFD0P7O5Yk3U1H-Vu-aMPSh3lhKzenBCfvkpvKzQZ2snPu0nRurDl-D_MBsevvB4fgclPFLqbdx0SADbAfSFo-XCo=s4092-w4092-e365-rw-v0-nu.png?height=600&width=600&text=Pixel+9+Pro+Camera",
-            "/img/google/1pUtPJjYvFwNZY1c_J5h1kMzB5a16fsD29DedA1cLXQsQbN-4YJ8B4mT3lhADy008IOobHGfFMojRLDZk_DP4MhCbk4FIhcnSO87=s4092-w4092-e365-rw-v0-nu.png?height=600&width=600&text=Pixel+9+Pro+Colors",
-        ],
-        category: "Smartphones",
-        rating: 4.6,
-        reviews: 189,
-        colors: ["Obsidian", "Porcelain", "Bay"],
-        storage: ["128 Go", "256 Go", "512 Go", "1 To"],
-        description:
-            "Le Pixel 8 Pro avec Google Tensor G3 et IA avancée offre la meilleure expérience photographique et Android pure.",
-        features: [
-            "Google Tensor G3 avec IA avancée",
-            "Écran Super Actua 6,7 pouces 120 Hz",
-            "Système de caméra Pro avec IA photographique",
-            "Magic Eraser et Face Unblur",
-            "7 ans de mises à jour Android",
-            "Batterie adaptative avec charge rapide",
-        ],
-        specifications: {
-            Écran: "Super Actua LTPO OLED 6,7 pouces",
-            Processeur: "Google Tensor G3",
-            Stockage: "128 Go à 1 To",
-            Caméra: "50 Mpx Principal, 48 Mpx Téléobjectif, 48 Mpx Ultra grand-angle",
-            Batterie: "5050 mAh avec charge rapide 30W",
-            Connectivité: "5G, Wi-Fi 7, Bluetooth 5.3",
-            Résistance: "IP68",
-        },
-        inStock: true,
-    },
-    "nintendo-switch-oled": {
-        id: "nintendo-switch-oled",
-        name: "Nintendo Switch OLED",
-        tagline: "Play has no limits.",
-        price: 349.99,
-        originalPrice: 399.99,
-        images: [
-            "/img/produit/115461-switch-oled-white-boxart-1200x675.avif?height=600&width=600&text=Switch+OLED+Console",
-            "/img/produit/hand-dock-photo.avif?height=600&width=600&text=Switch+OLED+Dock",
-            "/img/produit/photo01.avif?height=600&width=600&text=Switch+OLED+Handheld",
-            "/img/produit/photo02.avif?height=600&width=600&text=Switch+OLED+Games",
-        ],
-        category: "Gaming",
-        rating: 4.5,
-        reviews: 423,
-        badge: "Gaming",
-        colors: ["Blanc", "Néon"],
-        description:
-            "La Nintendo Switch OLED offre une expérience de jeu hybride unique avec un écran OLED vibrant de 7 pouces.",
-        features: [
-            "Écran OLED vibrant de 7 pouces",
-            "Support ajustable large et robuste",
-            "Dock avec port LAN filaire",
-            "64 Go de stockage interne",
-            "Audio amélioré en mode portable",
-            "Compatible avec tous les jeux Nintendo Switch",
-        ],
-        specifications: {
-            Écran: "OLED capacitif multi-touch 7 pouces",
-            Processeur: "NVIDIA Tegra X1 personnalisé",
-            Stockage: "64 Go interne + microSD",
-            Autonomie: "4,5 à 9 heures selon le jeu",
-            Connectivité: "Wi-Fi, Bluetooth 4.1",
-            Ports: "USB-C, lecteur microSD, prise casque",
-            Résolution: "1280x720 (portable), 1920x1080 (TV)",
-        },
-        inStock: true,
-    },
-    "sony-wh-1000xm5": {
-        id: "sony-wh-1000xm5",
-        name: "Sony WH-1000XM5",
-        tagline: "The best noise canceling, now with better call quality.",
-        price: 399,
-        originalPrice: 449,
-        images: [
-            "/img/76cc571af39ddbe23d060c00ac7d7a8b.avif?height=600&width=600&text=Sony+WH1000XM5+Front",
-            "/img/8d55bb90f843724704c6ddc13d7663c5.avif?height=600&width=600&text=Sony+WH1000XM5+Side",
-            "/img/6145c1d32e6ac8e63a46c912dc33c5bb.avif?height=600&width=600&text=Sony+WH1000XM5+Colors",
-            "/img/9-762869-7-SNY-What-s-In-The-Box-BLK-WH-1000XM5-Headphones-2000x2000px-FR-min.jpg?height=600&width=600&text=Sony+WH1000XM5+Folded",
-        ],
-        category: "Audio",
-        rating: 4.7,
-        reviews: 312,
-        colors: ["Noir", "Argent"],
-        description:
-            "Le casque Sony WH-1000XM5 offre la meilleure réduction de bruit au monde avec une qualité audio exceptionnelle.",
-        features: [
-            "Réduction de bruit leader de l'industrie",
-            "Processeur V1 et puce QN1",
-            "30 heures d'autonomie avec réduction de bruit",
-            "Charge rapide : 3 min = 3h d'écoute",
-            "Audio haute résolution et LDAC",
-            "Appels cristallins avec 8 microphones",
-        ],
-        specifications: {
-            Autonomie: "30 heures avec réduction de bruit",
-            Connectivité: "Bluetooth 5.2, NFC, jack 3,5mm",
-            Charge: "USB-C avec charge rapide",
-            Poids: "250 grammes",
-            Codecs: "SBC, AAC, LDAC",
-            Microphones: "8 microphones pour appels",
-            Contrôles: "Tactiles sur écouteur droit",
-        },
-        inStock: true,
-    },
-}
+];

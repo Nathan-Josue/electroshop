@@ -408,7 +408,7 @@ export default function SamsungPage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {samsungProducts.map((product, index) => (
                 <div
                   key={product.id}
@@ -423,7 +423,7 @@ export default function SamsungPage() {
             </div>
 
             <div className="text-center mt-12">
-              <Link href="/products?brand=samsung">
+              <Link href="/products?brand=Samsung">
                 <Button size="lg" className="bg-black hover:bg-gray-800 text-white rounded-full px-8">
                   Voir tous les produits Samsung
                   <ChevronRight className="ml-2 h-5 w-5" />

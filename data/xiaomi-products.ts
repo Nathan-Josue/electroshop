@@ -1,10 +1,14 @@
-export const xiaomiProducts = [
+import {Product} from "@/app/type/all-product";
+
+export const xiaomiProducts: Product[] = [
     {
         id: "xiaomi-14-ultra",
+        brand: "Xiaomi",
+
         name: "Xiaomi 14 Ultra",
         tagline: "Masterpiece in Sight",
-        price: 1099,
-        originalPrice: 1199,
+        price: 650 * 1099,
+        originalPrice: 650 * 1199,
         images: [
             "/img/xiaomi/custom_filename 1.png?height=400&width=400&query=Xiaomi+14+Ultra+smartphone",
             "/img/xiaomi/51uTfDzsKML._AC_SL1000_.png?height=400&width=400&query=Xiaomi+14+Ultra+smartphone",
@@ -38,10 +42,12 @@ export const xiaomiProducts = [
     },
     {
         id: "xiaomi-pad-6s-pro",
+        brand: "Xiaomi",
+
         name: "Xiaomi Pad 6S Pro",
         tagline: "Power for your creativity",
-        price: 699,
-        originalPrice: 749,
+        price: 650 * 699,
+        originalPrice: 650 * 749,
         images: [
             "/img/xiaomi/tablet/xiaomi-pad-6s-pro.png?height=400&width=400&query=Xiaomi+Pad+6S+Pro+tablet",
             "/img/xiaomi/e22707982190cc2587fde3afa3d54567 1.png?height=400&width=400&query=Xiaomi+Pad+6S+Pro+tablet"
@@ -52,9 +58,7 @@ export const xiaomiProducts = [
         badge: "Populaire",
         colors: ["Graphite Gray", "Mint Green"],
         storage: ["256 Go", "512 Go"],
-
         description: "La Xiaomi Pad 6S Pro offre puissance et polyvalence pour stimuler votre créativité avec un écran large et une autonomie longue durée.",
-
         features: [
             "Écran LCD 11 pouces, 120 Hz",
             "Processeur MediaTek Dimensity 9200+",
@@ -62,7 +66,6 @@ export const xiaomiProducts = [
             "Batterie 8600 mAh avec charge rapide 67W",
             "Prise en charge du stylet Xiaomi Smart Pen",
         ],
-
         specifications: {
             Écran: "LCD 11 pouces, 120 Hz",
             Processeur: "MediaTek Dimensity 9200+",
@@ -74,15 +77,15 @@ export const xiaomiProducts = [
             OS: "MIUI Pad basé sur Android 13",
             Résistance: "IP52 (résistance aux éclaboussures)",
         },
-
         inStock: true,
     },
     {
         id: "xiaomi-watch-s3",
+        brand: "Xiaomi",
         name: "Xiaomi Watch S3",
         tagline: "Style and Smartness",
-        price: 149,
-        originalPrice: 169,
+        price: 650 * 149,
+        originalPrice: 650 * 169,
         images: [
             "/img/xiaomi/watch/51x9OFfwRGL._AC_SL1000_.png?height=400&width=400&query=Xiaomi+Watch+S3+smartwatch",
             "/img/xiaomi/watch/51lcU9Ck0aL._AC_SL1000_.png?height=400&width=400&query=Xiaomi+Watch+S3+smartwatch",
@@ -96,9 +99,7 @@ export const xiaomiProducts = [
         badge: "-12%",
         colors: ["Black", "Silver"],
         sizes: ["46mm"],
-
         description: "La Xiaomi Watch S3 allie design élégant et fonctionnalités avancées pour un compagnon connecté au quotidien.",
-
         features: [
             "Écran AMOLED 1.43 pouces",
             "Suivi cardio et sommeil avancé",
@@ -106,7 +107,6 @@ export const xiaomiProducts = [
             "Autonomie jusqu'à 14 jours",
             "Notifications et appels Bluetooth",
         ],
-
         specifications: {
             Écran: "AMOLED 1.43 pouces, 326 ppi",
             Capteurs: "Cardiofréquencemètre, SpO2, accéléromètre, gyroscope",
@@ -116,15 +116,16 @@ export const xiaomiProducts = [
             OS: "Propriétaire Xiaomi",
             Compatibilité: "Android 6.0+ et iOS 10.0+",
         },
-
         inStock: true,
     },
     {
         id: "xiaomi-buds-4-pro",
+        brand: "Xiaomi",
+
         name: "Xiaomi Buds 4 Pro",
         tagline: "Immersive Sound",
-        price: 199,
-        originalPrice: 229,
+        price: 650 * 199,
+        originalPrice: 650 * 229,
         images: [
             "/img/xiaomi/audio/xiaomi-buds-4-pro.png?height=400&width=400&query=Xiaomi+Buds+4+Pro+earbuds"
         ],
@@ -133,9 +134,7 @@ export const xiaomiProducts = [
         reviews: 120,
         badge: "-13%",
         colors: ["Black", "Gold"],
-
         description: "Les Xiaomi Buds 4 Pro offrent un son immersif avec réduction active du bruit et une qualité audio haute fidélité.",
-
         features: [
             "Réduction active du bruit (ANC)",
             "Qualité audio Hi-Res",
@@ -143,7 +142,6 @@ export const xiaomiProducts = [
             "Connexion Bluetooth 5.3",
             "Charge rapide sans fil",
         ],
-
         specifications: {
             Connectivité: "Bluetooth 5.3",
             Autonomie: "Jusqu’à 9 heures (ANC activé), 28 heures avec boîtier",
@@ -151,15 +149,16 @@ export const xiaomiProducts = [
             Poids: "5.4 g par écouteur",
             Microphones: "3 microphones avec réduction du bruit",
         },
-
         inStock: true,
     },
     {
         id: "xiaomi-tv-a-pro",
+        brand: "Xiaomi",
+
         name: "Xiaomi TV A Pro",
         tagline: "Stunning Visuals",
-        price: 499,
-        originalPrice: 549,
+        price: 650 * 499,
+        originalPrice: 650 * 549,
         images: [
             "/img/xiaomi/tv/xiaomi-tv-a-pro.png?height=400&width=400&query=Xiaomi+TV+A+Pro+television"
         ],
@@ -168,9 +167,7 @@ export const xiaomiProducts = [
         reviews: 80,
         colors: ["Black"],
         sizes: ["55 pouces", "65 pouces"],
-
         description: "La Xiaomi TV A Pro offre une qualité d’image exceptionnelle avec un design élégant et des fonctionnalités smart avancées.",
-
         features: [
             "Écran 4K UHD avec HDR10+",
             "Android TV avec Google Assistant intégré",
@@ -178,7 +175,6 @@ export const xiaomiProducts = [
             "Système audio Dolby Audio",
             "Télécommande vocale",
         ],
-
         specifications: {
             Écran: "4K UHD, 55\" ou 65\"",
             Résolution: "3840 x 2160 pixels",
@@ -187,15 +183,16 @@ export const xiaomiProducts = [
             Audio: "Dolby Audio, DTS-HD",
             Résistance: "Norme standard (pas d’étanchéité spécifique)",
         },
-
         inStock: true,
     },
     {
         id: "redmi-book-pro-16",
+        brand: "Xiaomi",
+
         name: "RedmiBook Pro 16",
         tagline: "Powerful and Portable",
-        price: 999,
-        originalPrice: 1099,
+        price: 650 * 999,
+        originalPrice: 650 * 1099,
         images: [
             "/img/xiaomi/laptop/redmibook-pro-16.png?height=400&width=400&query=RedmiBook+Pro+16+laptop"
         ],
@@ -204,9 +201,7 @@ export const xiaomiProducts = [
         reviews: 70,
         colors: ["Space Gray"],
         storage: ["512 Go", "1 To"],
-
         description: "Le RedmiBook Pro 16 combine puissance et portabilité avec un écran haute résolution et des performances optimisées pour le travail et le divertissement.",
-
         features: [
             "Écran IPS 16 pouces, 2560 x 1600 pixels",
             "Processeur Intel Core i7 de 12e génération",
@@ -215,7 +210,6 @@ export const xiaomiProducts = [
             "Stockage SSD rapide jusqu'à 1 To",
             "Clavier rétroéclairé et connectivité complète",
         ],
-
         specifications: {
             Écran: "IPS 16 pouces, 2560 x 1600 pixels",
             Processeur: "Intel Core i7-12700H",
@@ -227,7 +221,6 @@ export const xiaomiProducts = [
             OS: "Windows 11",
             Résistance: "Norme standard (pas d’étanchéité spécifique)",
         },
-
         inStock: true,
     },
 ];

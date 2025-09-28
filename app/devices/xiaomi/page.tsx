@@ -189,7 +189,7 @@ export default function XiaomiPageRedesign() {
                                 Découvrez notre sélection des meilleurs produits Xiaomi disponibles chez ElectroShop.
                             </p>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
                             {xiaomiProducts.map((product, index) => (
                                 <div
                                     key={product.id}
@@ -203,7 +203,7 @@ export default function XiaomiPageRedesign() {
                             ))}
                         </div>
                         <div className="text-center mt-12">
-                            <Link href="/products?brand=xiaomi">
+                            <Link href="/products?brand=Xiaomi">
                                 <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-white rounded-full px-8 py-3">
                                     Voir tous les produits Xiaomi
                                     <ChevronRight className="ml-2 h-5 w-5" />

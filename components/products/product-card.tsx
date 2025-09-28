@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { useCart } from "@/components/cart/cart-context"
 import { useToast } from "@/hooks/use-toast"
-import {Product} from "@/app/type/product";
+import {Product} from "@/app/type/all-product";
 
 interface ProductCardProps {
   product: Product
@@ -45,8 +45,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           <Image
             src={product.images[1] || "/placeholder.svg"}
             alt={product.name}
-            width={400}
-            height={400}
+            fill
             className="w-full h-full object-contain p-8 group-hover:scale-105 transition-transform duration-500"
           />
 
@@ -84,10 +83,10 @@ export default function ProductCard({ product }: ProductCardProps) {
 
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center space-x-2">
-            <span className="text-2xl font-semibold text-gray-900">{product.price.toLocaleString("fr-FR")} €</span>
+            <span className="text-2xl font-semibold text-gray-900">{product.price.toLocaleString("fr-FR")} FCFA</span>
             {product.originalPrice && (
               <span className="text-sm text-gray-500 line-through">
-                {product.originalPrice.toLocaleString("fr-FR")} €
+                {product.originalPrice.toLocaleString("fr-FR")} FCFA
               </span>
             )}
             {discount > 0 && (

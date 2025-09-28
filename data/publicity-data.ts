@@ -27,7 +27,7 @@ export const publicity = [
         link:""
     },
     {
-        src: "/pub/24C2-FR-Voco-Gaming-Campaign-SB-DLP-2-963x568.png",
+        src: "/pub/pack.png",
         alt: "Découvrez nos packs déjà remisés !",
         bgColor: "#FB1559",
         title: "Nos packs",

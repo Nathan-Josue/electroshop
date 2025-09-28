@@ -55,12 +55,21 @@ const AppleFeaturedProducts = () => {
   return (
     <section ref={sectionRef} className="py-20 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-semibold text-black mb-4 transition-all duration-1000">
+                  Découvrez nos articles en vogue
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto transition-all duration-1000 delay-200">
+                  Explorez une sélection tendance, pensée pour allier style, innovation et modernité.
+              </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {featuredProducts.map((product, index) => (
             <div
               key={product.id}
               className={`${product.backgroundColor} rounded-3xl overflow-hidden relative min-h-[300px] flex flex-col justify-between p-8 group cursor-pointer transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl ${
-                index === 0 ? "lg:col-span-2" : ""
+                index === 0 ? "lg:col-span-1" : ""
               } ${visibleCards[index] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
               style={{
                 transitionDelay: `${index * 200}ms`,
@@ -68,7 +77,22 @@ const AppleFeaturedProducts = () => {
             >
               {/* Background gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="flex-1 flex items-center justify-center relative">
+                    <img
+                        src={product.images[0] || "/placeholder.svg"}
+                        alt={product.name}
+                        className="max-w-full h-auto transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"
+                    />
 
+                    {/* Floating elements */}
+                    <div className="absolute inset-0 pointer-events-none">
+                        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-blue-400/30 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div
+                            className="absolute top-3/4 right-1/4 w-1 h-1 bg-purple-400/30 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+                            style={{ animationDelay: "1s" }}
+                        ></div>
+                    </div>
+                </div>
               <div className={`${product.textColor} text-center relative z-10`}>
                 <h2 className="text-4xl md:text-5xl font-semibold mb-2 transition-transform duration-500 group-hover:scale-105">
                   {product.name}
@@ -105,23 +129,6 @@ const AppleFeaturedProducts = () => {
                       <ChevronRight className="ml-1 h-4 w-4 transition-transform duration-300 group-hover/link:translate-x-1" />
                     </Button>
                   </Link>
-                </div>
-              </div>
-
-              <div className="flex-1 flex items-center justify-center relative">
-                <img
-                  src={product.images[0] || "/placeholder.svg"}
-                  alt={product.name}
-                  className="max-w-full h-auto transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"
-                />
-
-                {/* Floating elements */}
-                <div className="absolute inset-0 pointer-events-none">
-                  <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-blue-400/30 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <div
-                    className="absolute top-3/4 right-1/4 w-1 h-1 bg-purple-400/30 rounded-full animate-float opacity-0 group-hover:opacity-100 transition-opacity duration-700"
-                    style={{ animationDelay: "1s" }}
-                  ></div>
                 </div>
               </div>
             </div>
