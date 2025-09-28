@@ -8,16 +8,32 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "ElectroShop - Boutique Électronique Moderne",
-  description:
-    "Découvrez notre sélection de smartphones, ordinateurs, accessoires et gadgets électroniques. Livraison rapide et paiement sécurisé.",
-  keywords: "électronique, smartphone, ordinateur, accessoires, gadgets, technologie",
-  authors: [{ name: "ElectroShop" }],
-  openGraph: {
-    title: "ElectroShop - Boutique Électronique Moderne",
-    description: "Découvrez notre sélection de produits électroniques",
-    type: "website",
-  },
+    title: 'ElectroShop',
+    description: "Découvrez notre sélection de smartphones, ordinateurs, accessoires et gadgets électroniques. Livraison rapide et paiement sécurisé.",
+    keywords: ['ElectroShop', 'électronique', 'smartphone', 'ordinateur', 'accessoires', 'gadgets', 'technologie'],
+    openGraph: {
+        title: 'ElectroShop - Boutique Électronique Moderne',
+        description: "Découvrez notre sélection de produits électroniques",
+        url: 'https://electroshop.vercel.app', // adapte avec ton vrai domaine
+        siteName: 'ElectroShop',
+        images: [
+            {
+                url: 'https://electroshop.vercel.app/preview.png', // ajoute une image de prévisualisation adaptée
+                width: 1200,
+                height: 630,
+            },
+        ],
+        locale: 'fr_FR',
+        type: 'website',
+    },
+    verification: {
+        google: 'TON_CODE_GOOGLE_VERIFICATION_ICI', // ajoute ton code Search Console
+    },
+    robots: {
+        index: true,
+        follow: true,
+    },
+    authors: [{ name: 'ElectroShop' }],
 }
 
 export default function RootLayout({
